@@ -28,9 +28,7 @@ public class ArraySort {
 			{
 				if (m[i]>m[i+1])
 				{
-					int tmp = m[i];
-					m[i] = m[i+1];
-					m[i+1] = tmp;
+					m[i] += m[i+1] - (m[i+1] = m[i]);
 					vidbulasZamina=true;
 				}
 			}
